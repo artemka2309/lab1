@@ -9,26 +9,158 @@
 </head>
 
 <body>
-<header>
-    <div class="logo"><img src="img/logobul.png" alt="s"></div>
-    <div class="nav">
-        <a href="#">Филиалы</a>
-        <a href="#">Бронирование</a>
-        <a href="#">Личный кабинет</a>
+    <header>
+        <div class="hedcont">
+          <div class="logo">
+            <img src="img/logobul.png" alt="s">
+          </div>
+          <nav class="nav">
+            <a href="#">Филиалы</a>
+            <a href="#">Бронирование</a>
+            <a href="#">Личный кабинет</a>
+          </nav>
+        </div>  
+    </header>
+
+    <main>
+        <div class="dover">
+            <section class="trust-section">
+                <h2>Доверие компании</h2>
+                <div class="circles-container">
+                <div class="circle">
+                    <img src="img\free-icon-hatchback-5035167.png" alt="Выбрать любой удобный автомобиль">
+                    <p>Выбрать любой удобный <br>автомобиль</p>
+                </div>
+                <div class="circle" id="time">
+                    <img src="img\free-icon-period-time-7339340.png" alt="Возможность выбора места, времени, даты">
+                    <p>Возможность выбора даты<br>и времени</p>
+                </div>
+                <div class="circle">
+                    <img src="img\free-icon-tariff-9742087.png" alt="Выбор тарифа">
+                    <p>Выбор тарифа</p>
+                </div>
+                <div class="circle">
+                    <img src="img\free-icon-atm-card-5307027.png" alt="Удобная система оплаты">
+                    <p>Удобная система оплаты</p>
+                </div>
+                </div>
+                <p class="call-to-action">На любой случай, любой автомобиль.</p>
+            </section>
+        </div>
+    </main>
+    <div class="avtomob">
+        <section class="search-section">
+            <h2>Поиск автомобилей</h2>
+            <form>
+              <div class="form-group">
+                <label for="car-class">Класс автомобиля:</label>
+                <select id="car-class" name="car-class">
+                  <option value="economy">Эконом</option>
+                  <option value="premium">Премиум</option>
+                </select>
+              </div>
+          
+              <div class="form-group">
+                <label for="car-make">Марка:</label>
+                <input type="text" id="car-make" name="car-make" list="popular-makes">
+                <datalist id="popular-makes">
+                  <option value="Audi">
+                  <option value="BMW">
+                  <option value="Ford">
+                  <option value="Honda">
+                  <option value="Hyundai">
+                  <option value="Kia">
+                  <option value="Mazda">
+                  <option value="Nissan">
+                  <option value="Toyota">
+                  <option value="Volkswagen">
+                </datalist>
+              </div>
+          
+              <div class="form-group">
+                <label for="car-model">Модель:</label>
+                <input type="text" id="car-model" name="car-model" list="popular-models">
+                <datalist id="popular-models">
+                  <option value="Civic">
+                  <option value="Corolla">
+                  <option value="Elantra">
+                  <option value="Fiesta">
+                  <option value="Focus">
+                  <option value="Golf">
+                  <option value="Mazda3">
+                  <option value="Passat">
+                  <option value="Sorento">
+                  <option value="X3">
+                </datalist>
+              </div>
+          
+              <button type="submit">Найти автомобиль</button>
+            </form>
+        </section>
     </div>
-</header>
+    <div class="news">
+        <section class="news-section">
+            <h2>Новости</h2>
+            <div class="news-list">
+              <div class="news-item">
+                <img src="img\hynd.jpeg" alt="Новость 1">
+                <h3>В России вынесли первый приговор за продажу аккаунтов каршеринга</h3>
+                <p>В конце 2020 года в России вынесли первый приговор за продажу аккаунтов каршеринга. Приморский районный суд Петербурга оштрафовал гражданина РФ Романа Амелина на 50 тыс. рублей. Как сообщает РАПСИ со ссылкой на Объединенную пресс-службу судов Петербурга, 21-летний молодой человек обвинялся по части 2 статьи 272 УК РФ (неправомерный доступ к компьютерной информации, совершенный из корыстной заинтересованности).</p>
+                <a href="#" class="btn">Подробнее</a>
+              </div>
+          
+              <div class="news-item">
+                <img src="img\put.jpg" alt="Новость 2">
+                <h3>Программа поддержки каршеринга не заработала из-за российского телематического оборудования</h3>
+                <p>25 августа 2020 года стало известно о том, что программа поддержки каршеринга, которая была анонсирована ещё в апреле на совещании у президента РФ Владимира Путина, так и не заработала.</p>
+                <a href="#" class="btn">Подробнее</a>
+              </div>
+          
+              <div class="news-item">
+                <img src="img\dann.jpg" alt="Новость 3">
+                <h3>Мошенничество с данными клиентов</h3>
+                <p>По сообщениям на июль 2020 г каршеринг становится отличным помощником для мошенников. С помощью селфи клиентов с паспортом на людей берут кредиты в микрофинансовых компаниях. Также базы каршерингов используют для звонков из фальшивой службы безопасности банков - так можно узнать наличие денег на счёте, данные банковских карт.</p>
+                <a href="#" class="btn">Подробнее</a>
+              </div>
+          
+              <div class="news-item">
+                <img src="img\pospot.jpg" alt="Новость 4">
+                <h3>Столичный каршеринг обвинил Роспотребнадзор в блокировке деятельности. Новые правила операторам объяснять не спешат</h3>
+                <p>Каршеринг не может возобновить работу по докоронавирусному сценарию из-за отсутствия предписаний Роспотребнадзора. Представители сервисов обвинили ведомство в блокировке их деятельности и 9 июня направили коллективное обращение.</p>
+                <a href="#" class="btn">Подробнее</a>
+              </div>
+            </div>
+          </section>
+    </div>
 
-<main>
-    <div class="cont"><img src="img/image 2.png" alt=""></div>
-    
-</main>
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-contact">
+                    <div class="footer-contact__phone">
+                    Телефон: <a href="tel:88005553535">8 (800) 555-35-35</a>
+                    </div>
+                    <div class="footer-contact__nav">
+                        Навигация по сайту:
+                        <ul>
+                            <li><a href="index.html">Главная страница</a></li>
+                            <li><a href="login.html">Страница входа в личный кабинет</a></li>
+                            <li><a href="register.html">Страница регистрации в личном кабинете</a></li>
+                            <li><a href="profile.html">Страница личного кабинета</a></li>
+                            <li><a href="booking.html">Страница бронирования</a></li>
+                            <li><a href="history.html">Страница истории бронирования</a></li>
+                            <li><a href="branches.html">Страница филиалов</a></li>
+                            <li><a href="cards.html">Страница банковских карт</a></li>
+                            <li><a href="car-select.html">Страница выбора автомобиля</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
 
 
-<footer>
-
-</footer>
-
-<script src="js/script.js"></script>
+    <script src="js/script.js"></script>
 </body>
 
 </html>
