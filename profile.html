@@ -12,7 +12,7 @@
     <header>
         <div class="hedcont">
           <div class="logo">
-            <a href="index.html"> <img src="img\logo (1).png" alt="s"></a>
+            <a href="index.html"> <img src="img\logo (3).png" alt="s"></a>
           </div>
           <nav class="nav">
             <a href="branches.html">Филиалы</a>
@@ -23,34 +23,44 @@
     </header>
 
     <main class="profile-cont">
-        <h1>Добро пожаловать в личный кабинет</h1>
+      <section class="profile-section">
+        <h1>Личный кабинет</h1>
+        <form>
+          <div class="form-group">
+            <label for="name">ФИО:</label>
+            <input type="text" id="name" name="name" value="Иванов Иван Иванович" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" value="ivanov@mail.com" required>
+          </div>
+          <div class="form-group">
+            <label for="phone">Номер телефона:</label>
+            <input type="tel" id="phone" name="phone" value="+7 (999) 123-45-67" required>
+          </div>
+          <div class="form-group">
+            <label for="passport">Паспортные данные:</label>
+            <input type="text" id="passport" name="passport" value="1234 567890" required>
+          </div>
+          <div class="form-group">
+            <label for="card">Банковская карта:</label>
+            <input type="text" id="card" name="card" value="**** **** **** 1234" required>
+          </div>
+          <button type="submit">Сохранить изменения</button>
+        </form>
+      
         <div class="profile-info">
-          <h2>Личная информация</h2>
-          <form>
-            <div class="form-group">
-              <label for="name">ФИО:</label>
-              <input type="text" id="name" name="name" value="Иванов Иван Иванович" required>
-            </div>
-            <div class="form-group">
-              <label for="email">Email:</label>
-              <input type="email" id="email" name="email" value="ivanov@mail.com" required>
-            </div>
-            <div class="form-group">
-              <label for="phone">Номер телефона:</label>
-              <input type="tel" id="phone" name="phone" value="+7 (999) 123-45-67" required>
-            </div>
-            <div class="form-group">
-              <label for="passport">Паспортные данные:</label>
-              <input type="text" id="passport" name="passport" value="1234 567890" required>
-            </div>
-            <div class="form-group">
-              <label for="card">Банковская карта:</label>
-              <input type="text" id="card" name="card" value="**** **** **** 1234" required>
-            </div>
-            <button type="submit">Сохранить изменения</button>
-          </form>
-          <a href="#" class="edit-profile">Редактировать профиль</a>
+          <h2>Здравствуйте, Андрей!</h2>
+          <ul>
+            <li><strong>Баллы:</strong> 5</li>
+            <li><strong>Кол-во бронирований:</strong> 2</li>
+            <li><strong>Баланс:</strong> 409 руб.</li>
+            <li><strong>Сумма бронирований:</strong> 99.000 руб.</li>
+            <li><strong>Оплачено:</strong> 49.500 руб.</li>
+          </ul>
+          <a href="#">Выход из личного кабинета</a>
         </div>
+      </section>
     
         <div class="booking-history">
             <h2>История бронирований</h2>
