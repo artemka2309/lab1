@@ -1,0 +1,95 @@
+// HEADER
+$('header').append('<button type="button" class="hamburger"></button>');
+$('.hamburger').click(function () {
+   $('header').toggleClass('opened');
+   $(this).toggleClass('opened');
+});
+// /HEADER
+
+$('.marker').click(function () {
+    var id = this.id;
+
+    if(id) {
+        var el = $('#popup-' + id);
+
+        $('.popup-auto').removeClass('show');
+
+        if(el.length && el.hasClass('popup-auto')) {
+            el.toggleClass('show');
+        }
+    }
+});
+
+var preloader = $('.preloader');
+preloader.addClass('run');
+$('header menu a[href*=".html"], footer .list a').click(function (e) {
+    e.preventDefault();
+    var href = this.href;
+
+    $('header').removeClass('opened');
+    $('header menu a').removeClass('active');
+    $(this).addClass('active');
+
+    preloader.removeClass('run');
+    preloader.addClass('out');
+
+    setTimeout(function () {
+        window.open(href, '_self');
+    }, 1000);
+});
+
+$('.close-popup').click(function () {
+   var parent = $(this).parent();
+   parent.toggleClass('show');
+});
+
+$('#add-auto').click(function () {
+    $('#autos').append(`<div class="auto">
+                            <p class="text-opacity">ID: #131231</p>
+                            <img src="img/cars/top_auto.png" alt="">
+                            <h3>Toyota Camry / C212 / AMG</h3>
+                            <p>Госномер: Л229ОХ</p>
+                            <p>Дата бронирования: 24.10.2020, 11:33</p>
+                            <p>Дата возврата: 29.10.2020, 11:33</p>
+                            <h4>Стоимость бронирования: <span class="c-blue">49.500 руб.</span></h4>
+                            <p>Филиал: Росстовский</p>
+                            <button type="button" class="c-red">- Удалить</button>
+                        </div>`);
+});
+
+var animations = {
+    'fadeLeft': 1,
+    'fadeRight': 1,
+    'fadeTop': 1,
+    'fadeBottom': 1
+};
+$('.fadeLeft, .fadeRight, .fadeTop, .fadeBottom').each(function () {
+    var currentAnimation = this.className.split(' ').filter(function (item) {
+        return animations[item]
+    })
+    currentAnimation = (currentAnimation.length) ? currentAnimation[0] : ''
+
+    if(currentAnimation) {
+        $(this).removeClass(currentAnimation);
+        $(this).attr('data-animation', currentAnimation)
+    }
+});
+
+function animationTrigger (page_minus) {
+    var pageY = window.pageYOffset;
+
+    $('.ad1, .ad2, .ad3').each(function (e) {
+        var eY = this.getBoundingClientRect()
+        var CA = $(this).data('animation');
+
+        if((pageY+screen.height - page_minus) >= eY.y && CA) {
+            $(this).addClass(CA);
+            $(this).removeAttr('data-animation');
+        }
+    });
+}
+
+$(document).scroll(function () {
+    animationTrigger(500);
+});
+animationTrigger(0);
