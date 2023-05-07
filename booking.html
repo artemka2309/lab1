@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <link href="styles/normolize-css" rel="stylesheet">
+  <link href="styles/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="hedcont">
+            <div class="logo">
+                <a href="index.html"> <img src="img/logobul.png" alt="s"></a>
+              </div>
+          <nav class="nav">
+            <a href="#">Филиалы</a>
+            <a href="booking.html">Бронирование</a>
+            <a href="#">Личный кабинет</a>
+          </nav>
+        </div>  
+    </header>
+
+    <main>
+        <form>
+            <div class="car-info">
+              <h2>Данные о машине</h2>
+              <div>
+                <label for="car-id">Идентификатор машины:</label>
+                <input type="text" id="car-id" name="car-id" required>
+              </div>
+              <div>
+                <label for="car-brand">Марка авто:</label>
+                <input type="text" id="car-brand" name="car-brand" required>
+              </div>
+              <div>
+                <label for="car-name">Название авто:</label>
+                <input type="text" id="car-name" name="car-name" required>
+              </div>
+              <div>
+                <label for="car-number">Номер машины:</label>
+                <input type="text" id="car-number" name="car-number" required>
+              </div>
+              <div>
+                <label for="start-date">Дата бронирования:</label>
+                <input type="date" id="start-date" name="start-date" required>
+              </div>
+              <div>
+                <label for="end-date">Дата возврата:</label>
+                <input type="date" id="end-date" name="end-date" required>
+              </div>
+              <div>
+                <label for="rent-price">Стоимость бронирования за день:</label>
+                <input type="text" id="rent-price" name="rent-price" required>
+              </div>
+              <div>
+                <label for="branch">Филиал:</label>
+                <select id="branch" name="branch" required>
+                  <option value="">Выберите филиал</option>
+                  <option value="branch1">Филиал 1</option>
+                  <option value="branch2">Филиал 2</option>
+                  <option value="branch3">Филиал 3</option>
+                </select>
+              </div>
+            </div>
+          
+            <div class="customer-info">
+              <h2>Данные о клиенте</h2>
+              <div>
+                <label for="last-name">Фамилия:</label>
+                <input type="text" id="last-name" name="last-name" required>
+              </div>
+              <div>
+                <label for="first-name">Имя:</label>
+                <input type="text" id="first-name" name="first-name" required>
+              </div>
+              <div>
+                <label for="middle-name">Отчество:</label>
+                <input type="text" id="middle-name" name="middle-name" required>
+              </div>
+              <div>
+                <label for="phone-number">Номер телефона:</label>
+                <input type="tel" id="phone-number" name="phone-number" required>
+              </div>
+              <div>
+                <label for="passport">Паспортные данные:</label>
+                <input type="text" id="passport" name="passport" required>
+              </div>
+              <div>
+                <label for="credit-card">Банковская карта:</label>
+                <input type="text" id="credit-card" name="credit-card" required>
+              </div>
+              <div>
+                <label for="birthdate">Дата рождения:</label>
+                <input type="date" id="birthdate" name="birthdate" required>
+              </div>
+            </div>
+          
+            <div class="booking-options">
+              <h2>Опции бронирования</h2>
+              <div>
+                <label for="num-cars">Количество автомобилей:</label>
+                <input type="number" id="num-cars" name="num-cars" min="1" required>
+              </div>
+              <div>
+                <label for="selected-car">Выбранная машина:</label>
+                <select id="selected-car" name="selected-car" required>
+                  <option value="">Выберите машину</option>
+                  <option value="car1">Машина 1</option>
+                  <option value="car2">Машина 2</option>
+                  <option value="car3">Машина 3</option>
+                </select>
+              </div>
+              <div>
+                <label for="selected-card">Выбранная банковская карта:</label>
+                <select id="selected-card" name="selected-card" required>
+                  <option value="">Выберите карту</option>
+                  <option value="card1">Карта 1</option>
+                  <option value="card2">Карта 2</option>
+                  <option value="card3">Карта 3</option>
+                </select>
+              </div>
+              <div>
+                <label for="rent-duration">Длительность бронирования (в днях):</label>
+                <input type="number" id="rent-duration" name="rent-duration" min="1" required>
+              </div>
+              <div>
+                <label for="rent-price">Цена бронирования:</label>
+                <input type="text" id="rent-price" name="rent-price" disabled>
+              </div>
+              <div>
+                <label for="discount">Скидка:</label>
+                <input type="text" id="discount" name="discount" disabled>
+              </div>
+              <div>
+                <label for="final-price">Итоговая стоимость:</label>
+                <input type="text" id="final-price" name="final-price" disabled>
+              </div>
+            </div>
+          
+            <button type="button" id="change-rate-btn">Изменить тариф</button>
+            <button type="submit" id="book-car-btn">Забронировать автомобиль</button>
+          </form>
+    </main>
+        
+
+    <footer>
+      <div class="footer-container">
+        <div class="footer-contact">
+          <p>Телефон: 8 (800) 555-35-35</p>
+        </div>
+        <div class="footer-nav">
+          <a href="#">Филиалы</a>
+          <a href="booking.html">Бронирование</a>
+          <a href="#">Личный кабинет</a>
+          <a href="history.html">История</a>
+          
+        </div>
+      </div>
+    </footer>
+
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
