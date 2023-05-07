@@ -3,11 +3,12 @@ font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 font-size: 20px;
 padding: 0;
 margin: 0;
-background-color: var(--main-color);;
+background-color: var(--main-color);
+
 }
 header{
 display: flex;
-background: #f8f8f8;
+background: var(--bcgrcolor);
 background-size: cover;
 padding: 10px;
 margin: 0;
@@ -35,6 +36,10 @@ text-align: center;
 margin: 20px;
 text-decoration: none;
 color: black;
+}
+
+.nav a:hover {
+  color: #007bff;
 }
 
 @media (max-width: 768px) {
@@ -109,7 +114,7 @@ margin-top: 40px;
 }
 
 .avtomob {
-  background-color: #f2f2f2;
+  background-color: var(--bcgrcolor);
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
@@ -247,7 +252,7 @@ background-color: #0062cc;
 
 /* Стили для футера */
 footer {
-  background-color: #f8f8f8;
+  background-color: var(--bcgrcolor);
   padding: 20px;
 }
 
@@ -343,7 +348,7 @@ form {
 }
 
 .booking-options input[disabled] {
-  background-color: #f8f8f8;
+  background-color: var(--bcgrcolor);
 }
 
 #change-rate-btn,
@@ -443,6 +448,7 @@ form {
 #map {
   height: 400px;
   margin-bottom: 20px;
+  margin: 20px 40px;
 
 }
 
@@ -483,11 +489,135 @@ form {
   }
 }
 
-.branches-main{
+.branches-cont{
   margin-top: 20px;
   display: flex;
 }
 
 :root {
   --main-color: #ebebeb;
+  --bcgrcolor: #f8f8f8;
 }
+
+
+  .login-cont {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f9f9f9;
+  }
+  
+  .login-block {
+    width: 400px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: var(--bcgrcolor);
+    text-align: center;
+  }
+  
+  .login-block h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .login-block form {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+  }
+  
+  .login-block label {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .login-block input[type="tel"],
+  .login-block input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  .login-block a button [type="submit"] {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .login-block a button[type="submit"]:hover {
+    background-color: #0069d9;
+  }
+
+  .profile-cont {
+    margin: 0 auto;
+    max-width: 800px;
+    padding: 20px;
+  }
+  
+  .profile-cont h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  .profile-info, .rental-history {
+    margin-bottom: 40px;
+  }
+  
+  .profile-info h2, .rental-history h2 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+  }
+  
+  .profile-info ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .profile-info li {
+    margin-bottom: 10px;
+  }
+  
+  .edit-profile {
+    color: #f00;
+    display: block;
+    margin-top: 20px;
+  }
+  
+  .rental-history table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  .rental-history th, .rental-history td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: center;
+  }
+  
+  .rental-history th {
+    background-color: #333;
+    color: #fff;
+  }
+  
+  .rental-history tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  .rental-history tr:hover {
+    background-color: #ddd;
+  }

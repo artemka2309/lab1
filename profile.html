@@ -3,99 +3,171 @@
 
 <head>
   <meta charset="utf-8">
-  <title></title>
+  <title>Главная</title>
   <link href="styles/normolize-css" rel="stylesheet">
-  <link href="styles/profile.css" rel="stylesheet">
+  <link href="styles/style.css" rel="stylesheet">
 </head>
 
 <body>
     <header>
         <div class="hedcont">
           <div class="logo">
-            <img src="img/logobul.png" alt="s">
+            <a href="index.html"> <img src="img/logobul.png" alt="s"></a>
           </div>
           <nav class="nav">
-            <a href="#">Филиалы</a>
-            <a href="#">Бронирование</a>
-            <a href="#">Личный кабинет</a>
+            <a href="branches.html">Филиалы</a>
+            <a href="booking.html">Бронирование</a>
+            <a href="login.html">Личный кабинет</a>
           </nav>
         </div>  
     </header>
 
-    <main>
-        <div class="container">
-            <h2 class="ad3 fadeLeft"><span class="c-blue">Личный</span> кабинет</h2>
-
-            <form class="auto-form ">
-                <article class="profile__user ">
-                    <div class="ad2">
-                        <input type="text" placeholder="Имя" name="name" value="Артем">
-                        <input type="text" placeholder="Фамилия" name="fam" value="Эпп">
-                        <input type="text" placeholder="Отчество" name="otch" value="Модинович">
-                        <input type="text" placeholder="Паспортные данные" disabled="" name="passport" value="1234 567890">
-                        <input type="date" placeholder="Дата рождения" name="date" value="1990-01-01">
-                        <input type="tel" placeholder="+7 (___) ___-__-__" name="phone" value="+7 (999) 999-99-99">
-                    </div>
-                    <div class="ad1">
-                        <a href="cards.html" class="btn">Банковская карта</a>
-                        <a href="index.html" class="btn">Выход из личного кабинета</a>
-                    </div>
-                </article>
-                <article>
-                    <h3 >Бронирования:</h3>
-                    <div class="booking flex flex-wrap flex-between flex-row">
-                        <div class="ad3 auto" >
-                            <p class="text-opacity">Индефикатор: A1234BC</p>
-                            <p class="text-opacity">Код бронирования: #413413</p>
-                            <img src="img/car4.png" alt="s">
-                            <h3>Mersedes Benz / S-Class / AMG</h3>
-                            <p>Mercedes - это легендарный автомобиль, известный своей элегантностью, надежностью и комфортом. Наша флотилия включает в себя несколько моделей Mercedes, в том числе популярный седан E-Class, мощный внедорожник GLE и спортивный купе C-Class. Все наши Mercedes оборудованы современными системами безопасности и комфорта, чтобы вы могли наслаждаться путешествием на полную катушку.</p>
-                            <p>Дата бронирования: 24.10.2023, 11:33</p>
-                            <h4>Стоимость бронирования: <span class="c-blue">49.500 руб.</span></h4>
-                            <p>Филиал: Бийск</p>
-                        </div>
-
-                        <div class="ad2 auto" >
-                            <p class="text-opacity">Индефикатор: A1234BC</p>
-                            <p class="text-opacity">Код бронирования: #413413</p>
-                            <img src="img/car3.png" alt="s">
-                            <h3>«Жигули» ВАЗ-2101 / A+Class / PRO</h3>
-                            <p>Жигули - это русский автомобиль, который любят многие поколения. Этот автомобиль прост в использовании и экономичен в обслуживании, что делает его идеальным выбором для тех, кто хочет сэкономить на аренде автомобиля. Наша флотилия включает в себя несколько моделей Жигули, в том числе классические модели, такие как "Жигули-ВАЗ 2107" и более современные модели, такие как "Жигули-ВАЗ 2114". Все наши Жигули находятся в отличном техническом состоянии и готовы к использованию.</p>
-                            <p>Дата бронирования: 24.10.2023, 11:33</p>
-                            <h4>Стоимость бронирования: <span class="c-blue">100000 руб.</span></h4>
-                            <p>Филиал: Барнаул</p>
-                        </div>
-
-                    </div>
-    </main>
-    <footer>
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-contact">
-                    <div class="footer-contact__phone">
-                    Телефон: <a href="tel:88005553535">8 (800) 555-35-35</a>
-                    </div>
-                    <div class="footer-contact__nav">
-                        Навигация по сайту:
-                        <ul>
-                            <li><a href="index.html">Главная страница</a></li>
-                            <li><a href="login.html">Страница входа в личный кабинет</a></li>
-                            <li><a href="register.html">Страница регистрации в личном кабинете</a></li>
-                            <li><a href="profile.html">Страница личного кабинета</a></li>
-                            <li><a href="booking.html">Страница бронирования</a></li>
-                            <li><a href="history.html">Страница истории бронирования</a></li>
-                            <li><a href="branches.html">Страница филиалов</a></li>
-                            <li><a href="cards.html">Страница банковских карт</a></li>
-                            <li><a href="car-select.html">Страница выбора автомобиля</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
+    <main class="profile-cont">
+        <h1>Добро пожаловать в личный кабинет</h1>
+        <div class="profile-info">
+          <h2>Личная информация</h2>
+          <ul>
+            <li><strong>ФИО:</strong> Иванов Иван Иванович</li>
+            <li><strong>Email:</strong> ivanov@mail.com</li>
+            <li><strong>Номер телефона:</strong> +7 (999) 123-45-67</li>
+            <li><strong>Паспортные данные:</strong> 1234 567890</li>
+            <li><strong>Банковская карта:</strong> **** **** **** 1234</li>
+          </ul>
+          <a href="#" class="edit-profile">Редактировать профиль</a>
         </div>
-    </footer>
-
-
-    <script src="js/script.js"></script>
-</body>
-
-</html>
+    
+        <div class="booking-history">
+            <h2>История бронирований</h2>
+            <div class="booking-info">
+              <div>
+                <h3>Информация о бронировании:</h3>
+                <div>
+                  <span>Код бронирования:</span>
+                  <span>106865</span>
+                </div>
+                <div>
+                  <span>Стоимость бронирования за день:</span>
+                  <span>3000₽</span>
+                </div>
+                <div class="hist-img">
+                  <img src="img\pngwing.com (1).png" alt="">
+                </div>
+              </div>
+              <div>
+                <h3>Информация об аренде</h3>
+                <div>
+                  <span>Номер заказа:</span>
+                  <span>1</span>
+                </div>
+                <div>
+                  <span>Марка автомобиля:</span>
+                  <span>Toyota</span>
+                </div>
+                <div>
+                  <span>Модель автомобиля:</span>
+                  <span>Corolla</span>
+                </div>
+                <div>
+                  <span>Дата начала аренды:</span>
+                  <span>01.05.2023</span>
+                </div>
+                <div>
+                  <span>Дата окончания аренды:</span>
+                  <span>05.05.2023</span>
+                </div>
+                <div>
+                  <span>Итоговое количество дней аренды:</span>
+                  <span>4</span>
+                </div>
+                <div>
+                  <span>Наименование филиала, где производилась аренда:</span>
+                  <span>Филиал в центре города</span>
+                </div>
+                <div>
+                  <span>Итоговая стоимость аренды:</span>
+                  <span>12000₽</span>
+                </div>
+                <div>
+                  <button class="repeat-booking-btn">Повторить бронирование</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="booking-history">
+            <div class="booking-info">
+              <div>
+                <h3>Информация о бронировании:</h3>
+                <div>
+                  <span>Код бронирования:</span>
+                  <span>106738</span>
+                </div>
+                <div>
+                  <span>Стоимость бронирования за день:</span>
+                  <span>5000₽</span>
+                </div>
+                <div class="hist-img">
+                  <img src="img\pngwing.com (2).png" alt="">
+                </div>
+              </div>
+              <div>
+                <h3>Информация об аренде</h3>
+                <div>
+                  <span>Номер заказа:</span>
+                  <span>1</span>
+                </div>
+                <div>
+                  <span>Марка автомобиля:</span>
+                  <span>Mercedes Benz</span>
+                </div>
+                <div>
+                  <span>Модель автомобиля:</span>
+                  <span>GLE 400</span>
+                </div>
+                <div>
+                  <span>Дата начала аренды:</span>
+                  <span>01.03.2023</span>
+                </div>
+                <div>
+                  <span>Дата окончания аренды:</span>
+                  <span>04.03.2023</span>
+                </div>
+                <div>
+                  <span>Итоговое количество дней аренды:</span>
+                  <span>3</span>
+                </div>
+                <div>
+                  <span>Наименование филиала, где производилась аренда:</span>
+                  <span>Филиал в центре города</span>
+                </div>
+                <div>
+                  <span>Итоговая стоимость аренды:</span>
+                  <span>15000₽</span>
+                </div>
+                <div>
+                  <button class="repeat-booking-btn">Повторить бронирование</button>
+                </div>
+              </div>
+            </div>
+          </div>
+    </main>
+      </main>
+      <footer>
+        <div class="footer-container">
+          <div class="footer-contact">
+            <p>Телефон: 8 (800) 555-35-35</p>
+          </div>
+          <div class="footer-nav">
+            <a href="#">Филиалы</a>
+            <a href="booking.html">Бронирование</a>
+            <a href="#">Личный кабинет</a>
+            <a href="history.html">История</a>
+            
+          </div>
+        </div>
+      </footer>
+  
+  
+      <script src="js/script.js"></script>
+  </body>
+  
+  </html>
