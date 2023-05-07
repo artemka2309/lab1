@@ -1,0 +1,209 @@
+.card-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 20px;
+    margin-top: 20px;
+  }
+  .card-list-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .card {
+    /* width: 50%; */
+    min-width: 50%;
+    padding: 20px;
+    margin-bottom: 20px;
+    margin-right: 20px; /* добавлен отступ между блоками */
+    border-radius: 10px; /* увеличен радиус скругления углов */
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2); /* изменена тень */
+    text-align: center; /* добавлено выравнивание по центру */
+    background-color: rgba(103, 103, 103, 0.2);
+  }
+  
+  .card-number {
+    font-size: 24px; /* увеличен размер шрифта */
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .card-type {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 10px;
+  }
+  
+  .card-status {
+    font-size: 16px; /* уменьшен размер шрифта */
+    color: #666;
+    margin-bottom: 10px;
+  }
+  
+  .active {
+    color: green;
+  }
+  
+  .expired {
+    color: red;
+  }
+  
+  .delete-card {
+    background-color: #f44336;
+    border: none;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .add-card {
+    background-color: #4CAF50;
+    border: none;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    /* margin-bottom: 20px; */
+
+  }
+  
+  /* изменен стиль кнопки добавления карты при наведении */
+  .add-card:hover {
+    background-color: #3E8E41;
+  }
+  
+/* Модальное окно */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+  
+  .modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    width: 50%;
+    max-width: 600px; /* добавлено ограничение на максимальную ширину */
+    display: flex;
+    flex-direction: column; /* изменено на столбец */
+    align-items: center; /* добавлено выравнивание по центру по горизонтали */
+    justify-content: center; /* добавлено выравнивание по центру по вертикали */
+    position: relative; /* добавлено для позиционирования крестика */
+  }
+  
+  .close-modal {
+    color: #aaa;
+    font-size: 28px;
+    font-weight: bold;
+    position: absolute; /* добавлено для позиционирования */
+    top: 10px; /* отступ сверху */
+    right: 10px; /* отступ справа */
+    cursor: pointer;
+  }
+  
+  .close-modal:hover,
+  .close-modal:focus {
+    color: black;
+    text-decoration: none;
+  }
+  
+  form label,
+  form input,
+  form select,
+  form button {
+    display: block;
+    margin-bottom: 10px;
+    width: 100%; /* добавлено для элементов формы */
+  }
+  
+  form button {
+    background-color: #4CAF50;
+    border: none;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+    
+  }
+  
+  form button:hover {
+    background-color: #3e8e41;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .card-inputs {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 400px;
+    margin: 20px 0;
+  }
+  
+  .card-inputs input {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  
+  .card-inputs label {
+    margin-bottom: 5px;
+  }
+  
+  .card-inputs .card-number-input {
+    width: 100%;
+  }
+  
+  .card-inputs .card-type-input {
+    width: calc(50% - 10px);
+  }
+  
+  .card-inputs .card-expiry-input {
+    width: calc(50% - 10px);
+  }
+  
+  .card-inputs .card-cvc-input {
+    width: calc(50% - 10px);
+  }
+  
+  .card-image {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .card-image img {
+    max-width: 300px;
+  }
+  
+  .card-name-input {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  
+  .card-status-input {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  /* Медиа-запросы */
+  @media screen and (max-width: 768px) {
+    .card {
+      width: 100%;
+      margin-right: 0; /* изменено на 0 */
+    }
+  }
