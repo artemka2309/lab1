@@ -22,9 +22,9 @@ justify-content: space-between;
 }
 
 .logo img {
-max-width: 100%;
+max-width: 160px;
 height: auto;
-margin-right: 100px;
+margin-right: 150px;
 }
 
 .nav {
@@ -383,6 +383,24 @@ form {
   padding: 20px;
 }
 
+
+
+.booking-history a button {
+  padding: 10px 20px;
+  width: 400px;
+  font-size: 16px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.booking-history a button:hover {
+  background-color: #0069d9;
+}
+
 .booking-info {
   display: flex;
   flex-wrap: wrap;
@@ -505,7 +523,7 @@ form {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: #f9f9f9;
+    background-color: #ebebeb;
   }
   
   .login-block {
@@ -536,7 +554,8 @@ form {
   }
   
   .login-block input[type="tel"],
-  .login-block input[type="password"] {
+  .login-block input[type="password"],
+  .login-block input[type="email"]{
     width: 100%;
     padding: 10px;
     margin-bottom: 20px;
