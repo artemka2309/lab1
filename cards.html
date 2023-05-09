@@ -43,16 +43,17 @@
           <div class="activity">Активна</div>
         </div>
       </div>
-      <div id="openModal" class="modal">
-        <div class="modal-dialog">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h3 class="modal-title">Название</h3>
-              <a href="#close" title="Close" class="close">×</a>
-            </div>
-            <div class="modal-body">    
-              <p>Содержимое модального окна...</p>
-            </div>
+      <!-- модальное окно -->
+
+      <div class="popup-box">
+        <a class="popup-button" href="#popup-window">Добавить карту</a>
+      </div>
+      <div id="popup-window" class="popup-overlay">
+        <div class="popup-content">
+          <h2>Заголовок</h2>
+          <a class="popup-close" href="#">&times;</a>
+          <div class="popup-text">
+            ааа
           </div>
         </div>
       </div>
@@ -73,9 +74,6 @@
           
         </div>
     </footer>
-
-
-    <script src="js/script.js"></script>
     </body>
 
     </html>

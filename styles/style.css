@@ -981,3 +981,81 @@ li {
 .button-group button:hover {
   background-color: #3e8e41;
 }
+
+
+
+/* Модальное окно */
+
+.popup-box {
+  width: 50%;
+  margin: 0 auto;
+  padding: 20px;
+  background-clip: padding-box;
+  text-align: center;
+}
+
+.popup-button {
+  padding: 10px;
+  color: #ffffff;
+  border-radius: 10px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.3s ease-out;
+  background-color: var(--button-color);
+}
+
+.popup-button:hover {
+  background: var(--hover-color);
+}
+
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.popup-overlay:target {
+  visibility: visible;
+  opacity: 1;
+}
+
+.popup-content {
+  margin: 70px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 5px;
+  width: 30%;
+  position: relative;
+  transition: all 5s ease-in-out;
+}
+
+.popup-content h2 {
+  margin-top: 0;
+}
+
+.popup-close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  transition: all 200ms;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #333;
+}
+
+.popup-close:hover {
+  color:#000;
+}
+
+.popup-text {
+  max-height: 30%;
+  overflow: auto;
+  
+}
