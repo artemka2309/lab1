@@ -1,73 +1,81 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-  <meta charset="UTF-8">
-  <title>Банковские карты</title>
-  <link rel="stylesheet" href="styles/cards.css">
+  <meta charset="utf-8">
+  <title>Главная</title>
+  <link href="styles/normolize-css" rel="stylesheet">
+  <link href="styles/style.css" rel="stylesheet">
 </head>
+
 <body>
-  <main>
-    <div class="card-list-wrapper">
+    <header>
+        <div class="hedcont">
+          <div class="logo">
+            <a href="index.html"> <img src="img\logo (3).png" alt="s"></a>
+          </div>
+          <nav class="nav">
+            <a href="branches.html">Филиалы</a>
+            <a href="booking.html">Бронирование</a>
+            <a href="login.html">Личный кабинет</a>
+          </nav>
+        </div>  
+    </header>
+    
+    <main class="card-cont">
       <div class="card-list">
         <div class="card">
-          <div class="card-number">**** **** **** 1234</div>
-          <div class="card-type">Visa</div>
-          <div class="card-status active">Активна</div>
-          <button class="delete-card">Удалить карту</button>
+          <button class="delete">Удалить</button>
+          <div class="type">Visa</div>
+          <div class="number">**** **** **** 1234</div>
+          <div class="activity">Активна</div>
         </div>
         <div class="card">
-          <div class="card-number">**** **** **** 5678</div>
-          <div class="card-type">MasterCard</div>
-          <div class="card-status expired">Закончился срок обслуживания карты</div>
-          <button class="delete-card">Удалить карту</button>
+          <button class="delete">Удалить</button>
+          <div class="type">MasterCard</div>
+          <div class="number">**** **** **** 5678</div>
+          <div class="activity">Закончился срок обслуживания карты</div>
         </div>
-        <!-- Другие карты здесь -->
+        <div class="card">
+          <button class="delete">Удалить</button>
+          <div class="type">Мир</div>
+          <div class="number">**** **** **** 9012</div>
+          <div class="activity">Активна</div>
+        </div>
       </div>
-      <button class="add-card">Добавить банковскую карту</button>
-    </div>
-  </main>
-
-  <div id="myModal" class="modal">
-    <div class="modal-content">
-      <span class="close-modal">&times;</span>
-      <h2>Добавление банковской карты</h2>
-      <div class="card-image">
-        <img src="img/card.jpeg" alt="Card Image">
+      <div id="openModal" class="modal">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h3 class="modal-title">Название</h3>
+              <a href="#close" title="Close" class="close">×</a>
+            </div>
+            <div class="modal-body">    
+              <p>Содержимое модального окна...</p>
+            </div>
+          </div>
+        </div>
       </div>
-      <form>
-        <div class="card-inputs">
-          <div class="card-number-input">
-            <label for="card-number">Номер карты:</label>
-            <input type="text" id="card-number" name="card-number" maxlength="19" required>
-          </div>
-          <div class="card-type-input">
-            <label for="card-type">Тип карты:</label>
-            <select id="card-type" name="card-type">
-              <option value="visa">Visa</option>
-              <option value="mastercard">MasterCard</option>
-              <option value="mir">Мир</option>
-            </select>
-          </div>
-          <div class="card-expiry-input">
-            <label for="card-expiry">Дата окончания:</label>
-            <input type="text" id="card-expiry" name="card-expiry" maxlength="5" required>
-          </div>
-          <div class="card-cvc-input">
-            <label for="card-cvc">Код CVV/CVC:</label>
-            <input type="text" id="card-cvc" name="card-cvc" maxlength="3" required>
-          </div>
-        </div>
-        <div class="card-name-input">
-          <label for="first-name">Имя:</label>
-          <input type="text" id="first-name" name="first-name" required>
-          <label for="last-name">Фамилия:</label>
-          <input type="text" id="last-name" name="last-name" required>
-        </div>
-        <button type="submit">Добавить карту</button>
-      </form>
-    </div>
-  </div>
+      
 
-  <script src="js/cards.js"></script>
-</body>
-</html>
+    </main>
+
+    <footer>
+      <div class="footer-container">
+        <div class="footer-contact">
+          <p>Телефон: 8 (800) 555-35-35</p>
+        </div>
+        <div class="footer-nav">
+          <a href="branches.html">Филиалы</a>
+          <a href="booking.html">Бронирование</a>
+          <a href="login.html">Личный кабинет</a>
+          <a href="history.html">История</a>
+          
+        </div>
+    </footer>
+
+
+    <script src="js/script.js"></script>
+    </body>
+
+    </html>

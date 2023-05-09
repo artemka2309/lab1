@@ -4,6 +4,7 @@ font-size: 20px;
 padding: 0;
 margin: 0;
 background-color: var(--main-color);
+height: 100vh;
 
 }
 header{
@@ -11,20 +12,20 @@ display: flex;
 background: var(--bcgrcolor);
 background-size: cover;
 padding: 10px;
-margin: 0;
+
 }
 
 .hedcont{
-max-width: 1233px;
-margin: 0 auto;
 display: flex;
 justify-content: space-between;
+margin: 0 auto;
+max-width: 1233px;
 }
 
 .logo img {
 max-width: 160px;
 height: auto;
-margin-right: 150px;
+margin-right: 350PX;
 }
 
 .nav {
@@ -39,7 +40,7 @@ color: black;
 }
 
 .nav a:hover {
-  color: #007bff;
+  color:   var(--hover-color);
 }
 
 @media (max-width: 768px) {
@@ -109,7 +110,7 @@ margin-top: -10px;
 }
 
 .call-to-action {
-font-size: 24px;
+font-size: 32px;
 margin-top: 40px;
 color: #0069d9;
 }
@@ -145,7 +146,7 @@ label {
   margin-bottom: 5px;
 }
 
-input[type="text"],
+input,
 select {
   width: 100%;
   height: 40px;
@@ -162,7 +163,7 @@ select:focus {
 }
 
 button[type="submit"] {
-  background-color: #007bff;
+  background-color: var(--button-color);
   color: #fff;
   border: none;
   border-radius: 5px;
@@ -173,9 +174,12 @@ button[type="submit"] {
 }
 
 button[type="submit"]:hover {
-  background-color: #0062cc;
+  background-color:   var(--hover-color);
 }
 
+.news{
+  margin: 10px;
+}
 
 .news-section {
 background-color: var(--main-color);
@@ -239,7 +243,7 @@ right: 0;
 margin: auto;
 display: block;
 padding: 10px 20px;
-background-color: #007bff;
+background-color: var(--button-color);
 color: #fff;
 text-decoration: none;
 border-radius: 5px;
@@ -247,7 +251,7 @@ transition: all 0.3s ease;
 }
 
 .btn:hover {
-background-color: #0062cc;
+background-color:   var(--hover-color);
 }
 
 
@@ -282,7 +286,7 @@ footer {
 }
 
 .footer-nav a:hover {
-  color: #007bff;
+  color:   var(--hover-color);
 }
 
 
@@ -356,7 +360,7 @@ form {
 #book-car-btn {
   padding: 10px 20px;
   font-size: 16px;
-  background-color: #007bff;
+  background-color: var(--button-color);
   color: #fff;
   border: none;
   border-radius: 5px;
@@ -366,7 +370,7 @@ form {
 
 #change-rate-btn:hover,
 #book-car-btn:hover {
-  background-color: #0069d9;
+  background-color:   var(--hover-color);
 }
 
 @media (max-width: 768px) {
@@ -390,7 +394,7 @@ form {
   padding: 10px 20px;
   width: 400px;
   font-size: 16px;
-  background-color: #007bff;
+  background-color: var(--button-color);
   color: #fff;
   border: none;
   border-radius: 5px;
@@ -399,7 +403,7 @@ form {
 }
 
 .booking-history a button:hover {
-  background-color: #0069d9;
+  background-color:   var(--hover-color);
 }
 
 .booking-info {
@@ -440,7 +444,7 @@ form {
 .repeat-booking-btn {
   padding: 10px 20px;
   font-size: 16px;
-  background-color: #007bff;
+  background-color: var(--button-color);
   color: #fff;
   border: none;
   border-radius: 5px;
@@ -449,7 +453,7 @@ form {
 }
 
 .repeat-booking-btn:hover {
-  background-color: #0069d9;
+  background-color:   var(--hover-color);
 }
 
 @media (max-width: 768px) {
@@ -462,6 +466,30 @@ form {
   max-width: 1200px;
   margin: 0 auto;
   padding: 20px;
+}
+
+.branch-locations {
+  display: table;
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+.branch-list {
+  display: table-cell;
+  vertical-align: top;
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+h3 {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+ul {
+  margin-top: 0;
+  padding-left: 20px;
+}
+li {
+  margin-bottom: 5px;
 }
 
 #map {
@@ -511,19 +539,24 @@ form {
 .branches-cont{
   margin-top: 20px;
   display: flex;
+  max-width: 1233px;
+  margin: 0 auto;
+  margin: 20px 30px;
 }
 
 :root {
   --main-color: #ebebeb;
   --bcgrcolor: #f8f8f8;
+  --button-color:#007bff;
+  --hover-color:#0069d9;
 }
 
 
   .login-cont {
     display: flex;
     justify-content: center;
-    align-items: center;
-    height: 100vh;
+    margin: 0 auto;
+    margin: 30px ;
     background-color: #ebebeb;
   }
   
@@ -570,7 +603,7 @@ form {
     padding: 10px;
     border: none;
     border-radius: 5px;
-    background-color: #007bff;
+    background-color: var(--button-color);
     color: #fff;
     font-size: 16px;
     font-weight: bold;
@@ -579,8 +612,23 @@ form {
   }
   
   .login-block a button[type="submit"]:hover {
-    background-color: #0069d9;
+    background-color:   var(--hover-color);
   }
+
+  .login-block a{
+    text-decoration: none;
+    font-size: 19px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #333;
+
+  }
+
+  .profile-cont{
+    max-width: 1233px;
+    margin: 0 auto ;
+  }
+
   .profile-section {
     flex: 1;
     padding: 20px;
@@ -612,7 +660,7 @@ form {
   }
   
   button[type="submit"] {
-    background-color: #007bff;
+    background-color: var(--button-color);
     border: none;
     color: #fff;
     cursor: pointer;
@@ -622,10 +670,29 @@ form {
   }
   
   button[type="submit"]:hover {
-    background-color: #0069d9;
+    background-color:   var(--hover-color);
   }
   
-  .profile-info {
+  .profile-but{
+
+  }
+
+  .profile-but[type="submit"] {
+    background-color: var(--button-color);
+    border: none;
+    width: 400px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 1.2rem;
+    padding: 10px;
+    transition: background-color 0.3s;
+  }
+  
+  .profile-but [type="submit"]:hover {
+    background-color:   var(--hover-color);
+  }
+
+  .profile-but {
     background-color: #f0f0f0;
     border-radius: 5px;
     padding: 20px;
@@ -704,7 +771,7 @@ form {
   }
 
   .edit-profile {
-    color: #f00;
+    color: var(--button-color);
     display: block;
     margin-top: 20px;
   }
@@ -732,3 +799,185 @@ form {
   .rental-history tr:hover {
     background-color: #ddd;
   }
+
+  .card-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px;
+  }
+  .card {
+    background-color: #f2f2f2;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+    flex-basis: calc(33.33% - 20px);
+    margin: 10px;
+    padding: 20px;
+    position: relative;
+  }
+  .card .delete {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: var(--button-color);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+  }
+  .card .delete:hover {
+    background-color:   var(--hover-color);
+  }
+  .card .type {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  .card .number {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  .card .activity {
+    font-size: 14px;
+    color: #888;
+    margin-bottom: 10px;
+  }
+
+  .modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  max-width: 500px;
+  width: 100%;
+  position: relative;
+}
+
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.modal-title {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.close-modal {
+  font-size: 24px;
+  font-weight: bold;
+  color: #aaa;
+  cursor: pointer;
+}
+
+.close-modal:hover,
+.close-modal:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.form-group input[type="text"],
+.form-group select {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.form-group .card-number-input input[type="text"] {
+  text-align: center;
+}
+
+.form-group .card-number-input input[type="text"]:focus {
+  outline: none;
+  box-shadow: 0 0 1px 1px #4CAF50;
+}
+
+.form-group .card-number-input input[type="text"]::-webkit-input-placeholder {
+  text-align: center;
+}
+
+.form-group .card-number-input input[type="text"]:-moz-placeholder {
+  text-align: center;
+}
+
+.form-group .card-number-input input[type="text"]::-moz-placeholder {
+  text-align: center;
+}
+
+.form-group .card-number-input input[type="text"]:-ms-input-placeholder {
+  text-align: center;
+}
+
+.form-group .card-number-input input.error {
+  border-color: red;
+}
+
+.form-group .card-expiry-input input[type="text"],
+.form-group .card-cvc-input input[type="text"] {
+  width: 50%;
+}
+
+.form-group .card-expiry-input input[type="text"] {
+  margin-right: 10px;
+}
+
+.form-group .card-cvc-input input[type="text"] {
+  margin-left: 10px;
+}
+
+.form-group .card-expiry-input input[type="text"]:focus,
+.form-group .card-cvc-input input[type="text"]:focus {
+  outline: none;
+  box-shadow: 0 0 1px 1px #4CAF50;
+}
+
+.form-group .card-expiry-input input.error,
+.form-group .card-cvc-input input.error {
+  border-color: red;
+}
+
+.button-group {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.button-group button {
+  background-color: #4CAF50;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.button-group button:hover {
+  background-color: #3e8e41;
+}
