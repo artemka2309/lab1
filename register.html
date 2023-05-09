@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Главная</title>
+  <title>Регистрация</title>
   <link href="styles/normolize-css" rel="stylesheet">
   <link href="styles/style.css" rel="stylesheet">
 </head>
@@ -22,21 +22,31 @@
         </div>  
     </header>
 
-    <main class="login-cont">
-        <div class="login-block">
-            <h2>Создать аккаунт</h2>
-            <form>
-              <label for="phone">Телефон:</label>
-              <input type="tel" id="phone" name="phone" required>
-              <label for="Email">Email:</label>
-              <input type="email" required>
-              <label for="password">Придумайте пароль:</label>
-              <input type="password" id="password" name="password" required>
-              <button type="submit" formaction="profile.html">Зарегистрироваться</button>
-            </form>
-          </div>
+      <main class="login-cont">
+          <div class="login-block">
+              <h2>Создать аккаунт</h2>
+              <form>
+                <label for="last-name">Фамилия:</label>
+                <input type="text" id="last-name" name="last-name" required>
+                <label for="first-name">Имя:</label>
+                <input type="text" id="first-name" name="first-name" required>
+                <label for="middle-name">Отчество:</label>
+                <input type="text" id="middle-name" name="middle-name" required>
+                <label for="passport">Паспортные данные (серия и номер):</label>
+                <input type="text" id="passport" name="passport" required>
+                <label for="phone">Телефон:</label>
+                <input type="tel" id="phone" name="phone" required>
+                <label for="date-of-birth">Дата рождения:</label>
+                <input type="date" id="date-of-birth" name="date-of-birth" required>
+                <label for="password">Пароль:</label>
+                <input type="password" id="password" name="password" required>
+                <label for="confirm-password">Повторите пароль:</label>
+                <input type="password" id="confirm-password" name="confirm-password" required>
+                <button type="submit" formaction="profile.html">Зарегистрироваться</button>
+              </form>
+            </div>
 
-    </main>
+      </main>
     <footer>
       <div class="footer-container">
         <div class="footer-contact">

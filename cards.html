@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Главная</title>
+  <title>Карты</title>
   <link href="styles/normolize-css" rel="stylesheet">
   <link href="styles/style.css" rel="stylesheet">
 </head>
@@ -43,21 +43,37 @@
           <div class="activity">Активна</div>
         </div>
       </div>
-      <!-- модальное окно -->
 
+      <!-- Кнопка для открытия модального окна -->
       <div class="popup-box">
         <a class="popup-button" href="#popup-window">Добавить карту</a>
       </div>
+
+      <!-- Модальное окно -->
       <div id="popup-window" class="popup-overlay">
         <div class="popup-content">
-          <h2>Заголовок</h2>
+          <h2>Добавление карточки для оплаты</h2>
           <a class="popup-close" href="#">&times;</a>
           <div class="popup-text">
-            ааа
+            <form action="" method="post">
+              <label for="card-number">Номер карты:</label>
+              <input type="text" class="form-control" id="card-number" name="card-number" pattern="[0-9]{4} [0-9]{4} [0-9]{4} [0-9]{4}" maxlength="19" required>
+              
+              <label for="card-holder-name">Имя и фамилия держателя карты:</label>
+              <input type="text" class="form-control" id="card-holder-name" name="card-holder-name" required>
+              
+              <label for="card-expiry-date">Дата окончания:</label>
+              <input type="text" class="form-control" id="card-expiry-date" name="card-expiry-date" placeholder="ММ/ГГ" pattern="(0[1-9]|1[0-2])\/[0-9]{2}" maxlength="5" required>
+              
+              <label for="card-cvv">CVV/CVC:</label>
+              <input type="text" class="form-control" id="card-cvv" name="card-cvv" placeholder="XXX" pattern="[0-9]{3}" maxlength="3" required>
+              
+              <input type="submit" value="Добавить">
+            </form>
           </div>
         </div>
       </div>
-      
+            
 
     </main>
 

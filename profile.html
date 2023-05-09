@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Главная</title>
+  <title>Личный кабинет</title>
   <link href="styles/normolize-css" rel="stylesheet">
   <link href="styles/style.css" rel="stylesheet">
 </head>
@@ -23,57 +23,33 @@
     </header>
 
     <main class="profile-cont">
-      <section class="profile-section">
-        <h1>Личный кабинет</h1>
-        <form>
-          <div class="form-group">
-            <label for="name">ФИО:</label>
-            <input type="text" id="name" name="name" value="Иванов Иван Иванович" required>
+      <main>
+        <div class="user-info">
+          <h2>Личный кабинет</h2>
+          <div class="user-details">
+            <label for="last-name"><strong>Фамилия:</strong></label>
+            <input type="text" id="last-name" value="Иванов">
+            <label for="first-name"><strong>Имя:</strong></label>
+            <input type="text" id="first-name" value="Иван">
+            <label for="middle-name"><strong>Отчество:</strong></label>
+            <input type="text" id="middle-name" value="Иванович">
+            <label for="passport"><strong>Паспортные данные:</strong></label>
+            <input type="text" id="passport" value="1234 567890">
+            <label for="phone"><strong>Телефон:</strong></label>
+            <input type="tel" id="phone" value="+7 (123) 456-78-90">
+            <label for="birth-date"><strong>Дата рождения:</strong></label>
+            <input type="date" id="birth-date" value="1990-01-01">
+            <a href="cards.html">Банковские карты</a>
+            <button class="logout-btn">Выйти</button>
           </div>
-          <div class="form-group">
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" value="ivanov@mail.com" required>
-          </div>
-          <div class="form-group">
-            <label for="phone">Номер телефона:</label>
-            <input type="tel" id="phone" name="phone" value="+7 (999) 123-45-67" required>
-          </div>
-          <div class="form-group">
-            <label for="passport">Паспортные данные:</label>
-            <input type="text" id="passport" name="passport" value="1234 567890" required>
-          </div>
-          <div class="form-group">
-            <label for="card">Банковская карта:</label>
-            <input type="text" id="card" name="card" value="**** **** **** 1234" required>
-          </div>
-          <a href="cards.html"><button>Изменить или Добавить карту</button></a>
-          <a href="cards.html">dsfdfds</a>
-          <button type="submit">Сохранить изменения</button>
-        </form>
-      
-        <div class="profile-info">
-          <h2>Здравствуйте, Иван!</h2>
-          <ul>
-            <li><strong>Баллы:</strong> 5</li>
-            <li><strong>Кол-во бронирований:</strong> 2</li>
-            <li><strong>Баланс:</strong> 409 руб.</li>
-            <li><strong>Сумма бронирований:</strong> 99.000 руб.</li>
-            <li><strong>Оплачено:</strong> 49.500 руб.</li>
-          </ul>
-          <button class="profile-but" type="submit">Выйти из Личного Кабинета</button>
         </div>
-      </section>
+
+
     
         <div class="booking-history">
             <h2>История бронирований</h2>
             <div class="booking-info">
               <div>
-                <h3>Информация о бронировании:</h3>
-                
-                <div>
-                  <span>Стоимость бронирования за день:</span>
-                  <span>3000₽</span>
-                </div>
                 <div class="hist-img">
                   <img src="img\pngwing.com (1).png" alt="">
                 </div>
@@ -81,8 +57,12 @@
               <div>
                 <h3>Информация об аренде</h3>
                 <div>
-                  <span>Номер заказа:</span>
-                  <span>1</span>
+                  <span>Код бронирования:</span>
+                  <span>1234</span>
+                </div>
+                <div>
+                  <span>Идентификатор авто:</span>
+                  <span>1234</span>
                 </div>
                 <div>
                   <span>Марка автомобиля:</span>
@@ -92,19 +72,20 @@
                   <span>Модель автомобиля:</span>
                   <span>Corolla</span>
                 </div>
-               
                 <div>
-                  <span>Итоговое количество дней аренды:</span>
-                  <span>4</span>
+                  <span>Дата начала аренды:</span>
+                  <span>01.03.2023</span>
                 </div>
+                <div>
+                  <span>Дата окончания аренды:</span>
+                  <span>04.03.2023</span>
+                </div>
+                
                 <div>
                   <span>Наименование филиала, где производилась аренда:</span>
                   <span>Филиал в центре города</span>
                 </div>
-                <div>
-                  <span>Итоговая стоимость аренды:</span>
-                  <span>12000₽</span>
-                </div>
+                
                 
               </div>
             </div>
@@ -112,12 +93,6 @@
           <div class="booking-history">
             <div class="booking-info">
               <div>
-                <h3>Информация о бронировании:</h3>
-                
-                <div>
-                  <span>Стоимость бронирования за день:</span>
-                  <span>5000₽</span>
-                </div>
                 <div class="hist-img">
                   <img src="img\pngwing.com (2).png" alt="">
                 </div>
@@ -125,8 +100,12 @@
               <div>
                 <h3>Информация об аренде</h3>
                 <div>
-                  <span>Номер заказа:</span>
-                  <span>2</span>
+                  <span>Код бронирования:</span>
+                  <span>1234</span>
+                </div>
+                <div>
+                  <span>Идентификатор авто:</span>
+                  <span>1234</span>
                 </div>
                 <div>
                   <span>Марка автомобиля:</span>
@@ -137,21 +116,18 @@
                   <span>GLE 400</span>
                 </div>
                 <div>
-                  
-                <div>
-                  <span>Итоговое количество дней аренды:</span>
-                  <span>3</span>
+                  <span>Дата начала аренды:</span>
+                  <span>01.03.2023</span>
                 </div>
+                <div>
+                  <span>Дата окончания аренды:</span>
+                  <span>04.03.2023</span>
+                </div>
+                
                 <div>
                   <span>Наименование филиала, где производилась аренда:</span>
                   <span>Филиал в центре города</span>
                 </div>
-                <div>
-                  <span>Итоговая стоимость аренды:</span>
-                  <span>15000₽</span>
-                </div>
-                
-              </div>
             </div>
             <a href="history.html"><button>Перейти в историю</button></a>
           </div>

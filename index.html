@@ -28,11 +28,11 @@
                 <div class="circles-container">
                 <div class="circle">
                     <img src="img\free-icon-hatchback-5035167.png" alt="Выбрать любой удобный автомобиль">
-                    <p>Выбрать любой удобный <br>автомобиль</p>
+                    <p>Выбрать удобный <br>автомобиль</p>
                 </div>
                 <div class="circle" id="time">
                     <img src="img\free-icon-period-time-7339340.png" alt="Возможность выбора места, времени, даты">
-                    <p>Возможность выбора даты<br>и времени</p>
+                    <p>Выбор даты<br>и времени</p>
                 </div>
                 <div class="circle">
                     <img src="img\free-icon-tariff-9742087.png" alt="Выбор тарифа">
@@ -50,7 +50,7 @@
     <div class="avtomob">
         <section class="search-section">
             <h2>Поиск автомобилей</h2>
-            <form>
+            <form action="car-select.html" method="POST">
               <div class="form-group">
                 <label for="car-class">Класс автомобиля:</label>
                 <select id="car-class" name="car-class">
@@ -58,7 +58,7 @@
                   <option value="premium">Премиум</option>
                 </select>
               </div>
-          
+            
               <div class="form-group">
                 <label for="car-make">Марка:</label>
                 <input type="text" id="car-make" name="car-make" list="popular-makes">
@@ -75,7 +75,7 @@
                   <option value="Volkswagen">
                 </datalist>
               </div>
-          
+            
               <div class="form-group">
                 <label for="car-model">Модель:</label>
                 <input type="text" id="car-model" name="car-model" list="popular-models">
@@ -92,7 +92,7 @@
                   <option value="X3">
                 </datalist>
               </div>
-          
+            
               <button type="submit">Найти автомобиль</button>
             </form>
         </section>

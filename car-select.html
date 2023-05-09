@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Выбор авто</title>
+  <link href="styles/normolize-css" rel="stylesheet">
+  <link href="styles/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="hedcont">
+          <div class="logo">
+            <a href="index.html"> <img src="img\logo (3).png" alt="s"></a>
+          </div>
+          <nav class="nav">
+            <a href="branches.html">Филиалы</a>
+            <a href="booking.html">Бронирование</a>
+            <a href="login.html">Личный кабинет</a>
+          </nav>
+        </div>  
+    </header>
+
+    <main class="car-selection-cont">
+        <div class="car-selection">
+            <h2>Выберите автомобиль</h2>
+            <form>
+              <div class="form-group-sel">
+                <label for="car-make">Марка автомобиля:</label>
+                <select id="car-make" name="car-make">
+                  <option value="Audi">Audi</option>
+                  <option value="BMW">BMW</option>
+                  <option value="Ford">Ford</option>
+                  <option value="Honda">Honda</option>
+                  <option value="Hyundai">Hyundai</option>
+                  <option value="Kia">Kia</option>
+                  <option value="Mazda">Mazda</option>
+                  <option value="Nissan">Nissan</option>
+                  <option value="Toyota">Toyota</option>
+                  <option value="Volkswagen">Volkswagen</option>
+                </select>
+              </div>
+          
+              <div class="form-group-sel">
+                <label for="car-model">Модель автомобиля:</label>
+                <input type="text" id="car-model" name="car-model">
+              </div>
+          
+              <div class="form-group-sel">
+                <label for="car-color">Цвет автомобиля:</label>
+                <input type="text" id="car-color" name="car-color">
+              </div>
+          
+              <div class="form-group-sel">
+                <label for="engine-type">Тип двигателя:</label>
+                <select id="engine-type" name="engine-type">
+                  <option value="benzine">Бензиновый</option>
+                  <option value="diesel">Дизельный</option>
+                </select>
+              </div>
+          
+              <div class="form-group-sel">
+                <label for="transmission">Коробка передач:</label>
+                <select id="transmission" name="transmission">
+                  <option value="manual">МКП</option>
+                  <option value="automatic">АКП</option>
+                </select>
+              </div>
+          
+              <div class="form-group-sel">
+                <label for="car-image">Картинка автомобиля:</label>
+                <input type="file" id="car-image" name="car-image">
+              </div>
+          
+              <div class="form-group-sel">
+                <button type="submit">Выбрать</button>
+                <button type="button" class="cancel-btn">Отмена</button>
+              </div>
+            </form>
+          </div>
+    </main>
+
+    <footer>
+      <div class="footer-container">
+        <div class="footer-contact">
+          <p>Телефон: 8 (800) 555-35-35</p>
+        </div>
+        <div class="footer-nav">
+          <a href="branches.html">Филиалы</a>
+          <a href="booking.html">Бронирование</a>
+          <a href="login.html">Личный кабинет</a>
+          <a href="history.html">История</a>
+          
+        </div>
+    </footer>
+
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
