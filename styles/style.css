@@ -43,22 +43,8 @@ color: black;
 color:   var(--hover-color);
 }
 
-@media (max-width: 768px) {
-.nav {
-display: flex;
-flex-direction: column;
-align-items: center;
-}
+/* index */
 
-.nav a{
-margin: 10px;
-}
-}
-
-.cont{
-margin: 0 auto;
-padding: 0;
-}
 
 .trust-section {
 padding: 40px;
@@ -254,8 +240,10 @@ transition: all 0.3s ease;
 background-color:   var(--hover-color);
 }
 
+/* index-close */
 
-/* Стили для футера */
+/* footer */
+
 footer {
 background-color: var(--bcgrcolor);
 padding: 20px;
@@ -289,6 +277,9 @@ text-decoration: none;
 color:   var(--hover-color);
 }
 
+/* footer-close */
+
+/* branches */
 
 form {
 max-width: 1200px;
@@ -337,6 +328,10 @@ margin-bottom: 5px;
 #map{
   margin-left: 300px;
 }
+
+/* branches-close */
+
+/* history */
 
 .booking-history {
 max-width: 1200px;
@@ -424,6 +419,8 @@ background-color:   var(--hover-color);
 }
 }
 
+/* history-close */
+
 :root {
 --main-color: #ebebeb;
 --bcgrcolor: #f8f8f8;
@@ -431,11 +428,12 @@ background-color:   var(--hover-color);
 --hover-color:#0069d9;
 }
 
+/* login */
 
 .login-cont {
   display: flex;
   justify-content: center;
-  padding: 30px;
+  padding: 60px;
   background-color: #ebebeb;
 }
 
@@ -502,6 +500,10 @@ background-color:   var(--hover-color);
   color: #333;
 
 }
+
+/* login-close */
+
+/* profile */
 
 .profile-cont{
   max-width: 1233px;
@@ -623,6 +625,11 @@ button[type="submit"]:hover {
 .profile-info li {
   margin-bottom: 10px;
 }
+
+/* profile-close */
+
+/* card */
+
 .modal {
   display: none; 
   position: fixed; 
@@ -842,7 +849,9 @@ transition: all 0.3s ease-out;
 background-color: var(--hover-color);
 }
 
+/* card-close */
 
+/* booking */
 
 .booking-cont {
 display: flex;
@@ -947,7 +956,7 @@ margin-right: 0;
 }
 
 .final-price {
-font-size: 20px;
+font-size: 30px;
 font-weight: bold;
 margin-top: 20px;
 }
@@ -974,10 +983,14 @@ margin-bottom: 10px;
 }
 }
 
+/* booking-close */
+
 main{
 max-width: 1233px;
 margin: 0 auto;
 }
+
+/* car-selection */
 
 .form-group {
   margin-bottom: 20px;
@@ -1075,6 +1088,10 @@ margin: 0 auto;
   }
 }
 
+/* car-selection close */
+
+/* profile */
+
 .profile-cont{
   padding-top: 30px;
 }
@@ -1139,3 +1156,5 @@ margin: 0 auto;
     width: 100%;
   }
 }
+
+/* profile close */
