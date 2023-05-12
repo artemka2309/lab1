@@ -309,15 +309,15 @@ vertical-align: top;
 padding: 10px;
 border: 1px solid #ccc;
 }
-h3 {
+.branch-list h3 {
 margin-top: 0;
 margin-bottom: 10px;
 }
-ul {
+.branch-list ul {
 margin-top: 0;
 padding-left: 20px;
 }
-li {
+.branch-list li {
 margin-bottom: 5px;
 }
 
@@ -532,15 +532,15 @@ background-color:   var(--hover-color);
   margin-bottom: 20px;
 }
 
-label {
+.car-selection label {
   display: block;
   font-size: 1.2rem;
   margin-bottom: 5px;
 }
 
-input[type="text"],
-input[type="email"],
-input[type="tel"] {
+.car-selection input[type="text"],
+.car-selection input[type="email"],
+.car-selection input[type="tel"] {
   border: 1px solid #ccc;
   border-radius: 3px;
   font-size: 1.2rem;
@@ -548,7 +548,7 @@ input[type="tel"] {
   width: 100%;
 }
 
-button[type="submit"] {
+.car-selection button[type="submit"] {
   background-color: var(--button-color);
   border: none;
   color: #fff;
@@ -558,7 +558,7 @@ button[type="submit"] {
   transition: background-color 0.3s;
 }
 
-button[type="submit"]:hover {
+.car-selection button[type="submit"]:hover {
   background-color:   var(--hover-color);
 }
 
@@ -986,9 +986,10 @@ margin-bottom: 10px;
 /* booking-close */
 
 main{
-max-width: 1233px;
-margin: 0 auto;
-}
+  margin: 0 auto;
+  max-width: 1233px;
+  
+ }
 
 /* car-selection */
 
@@ -1009,11 +1010,7 @@ margin: 0 auto;
   border-radius: 5px;
   font-size: 16px;
 }
- main{
-  margin: 0 auto;
-  max-width: 1233px;
-  
- }
+
 
 .car-selection-cont{
   padding: 40px;
